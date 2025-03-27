@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+
+        <div class="superior">
+            <img src="Imagens\icone-perfil.png" class="icone-perfil-img">
+            <h1>Israel Dias</h1>
+            <h3>Aspirante a Estagiário</h3>
+        </div>
+
+        <div class="lat-esq">
+            <a href="https://github.com/Isradias?tab=repositories" target="_blank">
+                <img src="Imagens\github-icon.png" class="img-lat-esq">
+                <span class="contato">github.com/Isradias?tab=repositories</span>
+            </a>
+            <a href="https://www.linkedin.com/in/israeldias/" target="_blank">
+                <img src="Imagens\linkedin-icon.png" class="img-lat-esq">
+                <span class="contato">linkedin.com/in/israeldias/</span>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&to=israelcaldas10@email.com" target="_blank">
+                <img src="Imagens\email-icon.png" class="img-lat-esq">
+                <span class="contato">israelcaldas10@gmail.com</span>
+            </a>
+
+            <a href="http://wa.me/5521981363255" target="_blank">
+                <img src="Imagens\whatsapp-icon.png" class="img-lat-esq">
+                <span class="contato">+55 21 981363255</span>
+            </a>
+
+            <a href="https://www.instagram.com/isradias_/" target="_blank">
+                <img src="Imagens\instagram-icon.png" class="img-lat-esq">
+                <span class="contato">instagram.com/isradias_/</span>
+            </a>
+
+        </div>
+
+        <div class="central">Navegador central</div>
+        <div class="lat-dir">Barra lateral direita</div>
+        <div class="inferior">Barra inferior</div>
+    </div>
+
+    <script>
+        const lateralEsquerda = document.querySelector(".lat-esq");
+        const body = document.querySelector(".body");
+
+        lateralEsquerda.addEventListener("mouseover", () => {
+            body.style.gridTemplateColumns = "1fr 2fr 1fr";
+
+            document.querySelectorAll(".contato").forEach(el => {
+                setTimeout(() => {
+                    el.style.opacity = '1';
+                }, 100); //500 é o tempo para voltar
+            });
+
+        });
+
+        lateralEsquerda.addEventListener("mouseleave", () => {
+            setTimeout(() => {
+                body.style.gridTemplateColumns = "60px 16fr 6fr";
+            }, 100);
+
+            document.querySelectorAll(".contato").forEach(el => {
+                el.style.opacity = '0';
+            });
+        });
+
+    </script>
+</body>
+
+</html>

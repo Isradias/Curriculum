@@ -1,0 +1,30 @@
+.lat-esq {
+    background-color: rgb(124, 13, 119);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 7px;
+}
+
+.lat-esq:hover{
+    padding-left: 15px;
+    transition: 150ms ease;
+    transition-delay: 150ms;
+}
+
+.img-lat-esq{
+    width: 40px;
+    height: fit-content;
+}
+
+.img-lat-esq:hover{
+    scale: 1.2;
+    /* filter: brightness(150); ta feio */
+}
+
+.contato {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}

@@ -1,0 +1,29 @@
+.superior {
+    background-color: chartreuse;
+    grid-column: span 3;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    align-content: flex-start;
+    padding: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 5px;
+}
+
+    .icone-perfil-img{
+        background-color: blue;
+        height: 100%;
+        width: fit-content;
+        padding: 5px;
+    }
+
+    h1{
+        font-size: 170%;
+        background-color: brown;
+    }
+
+    h3{
+        font-size: 90%;
+    }

@@ -1,0 +1,4 @@
+.inferior {
+    background-color: chocolate;
+    grid-column: span 3;
+}

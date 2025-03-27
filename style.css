@@ -1,0 +1,22 @@
+@import url("Structure/superior.css");
+@import url("Structure/lat-esq.css");
+@import url("Structure/central.css");
+@import url("Structure/lat-dir.css");
+@import url("Structure/inferior.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: min-content 16fr 6fr;
+    grid-template-rows: 60px auto 50px;
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    transition: grid-template-columns 0.3s ease-in-out;
+}

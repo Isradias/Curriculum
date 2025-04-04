@@ -12,11 +12,11 @@
 
 .body {
     display: grid;
-    grid-template-columns: min-content 16fr 6fr;
+    grid-template-columns: 0.1fr 3.5fr 1.5fr;
     grid-template-rows: 60px auto 50px;
     background-color: aquamarine;
     width: 100vw;
     height: 100vh;
     gap: 10px;
-    transition: grid-template-columns 0.3s ease-in-out;
+    transition: grid-template-columns 0.3s ease;
 }

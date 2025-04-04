@@ -1,23 +1,27 @@
-const lateralEsquerda = document.querySelector(".lat-esq");
-const body = document.querySelector(".body");
+function aba_aberta() {
+    const elemento = document.querySelector(".body");
+    elemento.style.gridTemplateColumns = "1fr 3fr 1.5fr";
 
-lateralEsquerda.addEventListener("mouseover", () => {
-    body.style.gridTemplateColumns = "1fr 2fr 1fr";
+    const texto = document.querySelectorAll(".contato");
 
-    document.querySelectorAll(".contato").forEach(el => {
-        setTimeout(() => {
-            el.style.opacity = '1';
-        }, 100); //500 é o tempo para voltar
-    });
-
-});
-
-lateralEsquerda.addEventListener("mouseleave", () => {
     setTimeout(() => {
-        body.style.gridTemplateColumns = "60px 16fr 6fr";
-    }, 100);
+        texto.forEach(el => {
+            el.style.display = "inline";
+            setTimeout(() =>{
+                el.style.opacity = "1";
+            })
+        })
+    }, 300)
+}
 
-    document.querySelectorAll(".contato").forEach(el => {
-        el.style.opacity = '0';
-    });
-});
+function aba_fechada() {
+    const elemento = document.querySelector(".body")
+    elemento.style.gridTemplateColumns = "0.1fr 3.5fr 1.5fr";
+
+    const texto = document.querySelectorAll(".contato");
+
+    texto.forEach(el => {
+        el.style.display = "none";
+        el.style.opacity = "0";
+    })
+}

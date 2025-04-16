@@ -1,5 +1,6 @@
 .superior {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+    background-color: var(--azul-principal);
     grid-column: span 3;
     display: flex;
     box-sizing: border-box;
@@ -13,17 +14,19 @@
 }
 
     .icone-perfil-img{
-        background-color: blue;
+        /* background-color: blue; */
         height: 100%;
         width: fit-content;
         padding: 5px;
     }
 
-    h1{
+    .superior h1{
         font-size: 170%;
-        background-color: brown;
+        color: var(--branco-quase);
+        /* background-color: brown; */
     }
 
-    h3{
+    .superior h3{
         font-size: 90%;
+        color: var(--dourado-suave);
     }

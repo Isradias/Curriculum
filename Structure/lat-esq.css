@@ -1,5 +1,9 @@
 .lat-esq {
-    background-color: rgb(124, 13, 119);
+    /* background-color: rgb(124, 13, 119); */
+    background-color: var(--azul-claro);
+    border-radius: 0 10px 10px 0;
+    border: 5px solid;
+    color: black;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -12,22 +16,25 @@
     height: fit-content;
 }
 
-.img-lat-esq:hover{
-    scale: 1.2;
-}
-
 .container_contato{
     display: flex;
     align-items: center;
     gap: 0 8px;
     text-decoration: none;
-    background-color: aqua;
+    /* background-color: aqua; */
     font-size: 19px;
 }
 
+.container_contato:hover{
+    scale: 1.1;
+    translate: 5%;
+}
+
 .contato {
+    color: var(--branco-quase);
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease;
-    background-color: red;
+    margin-left: 20px;
+    /* background-color: red; */
 }

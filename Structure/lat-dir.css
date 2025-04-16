@@ -1,3 +1,34 @@
 .lat-dir {
-    background-color: rgb(13, 30, 124);
+    /* background-color: rgb(13, 30, 124); */
+    background-color: var(--azul-claro);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    color: var(--cinza-medio) ;
+    text-align: justify;
+    border: 5px solid;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.lat-dir > *{
+    margin: 10px;
+}
+
+.lat-dir h1{
+    font-size: 36px;
+    align-self: flex-start;
+    color: var(--branco-quase);
+}
+
+.lat-dir p{
+    font-size: 14px;
+}
+
+.lat-dir img{
+    width: 90%;
+    border-radius: 5px;
+    border: 5px solid;
+    border-color: var(--cinza-medio);
 }

@@ -12,11 +12,21 @@
 
 .body {
     display: grid;
-    grid-template-columns: 0.1fr 3.5fr 1.5fr;
+    grid-template-columns: 0.1fr 3.5fr 1fr;
     grid-template-rows: 60px auto 50px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-color: gray;
     width: 100vw;
     height: 100vh;
-    gap: 10px;
+    gap: 5px;
     transition: grid-template-columns 0.3s ease;
 }
+
+:root {
+    --azul-principal: #293241;      /* azul escuro - fundo principal */
+    --azul-claro: #3d5a80;                   /* azul mais claro - destaques */
+    --branco-quase: #f4f4f4;                 /* fundo ou texto suave */
+    --cinza-escuro: #1a1a1a;                 /* para texto ou barras discretas */
+    --dourado-suave:  #ee6c4d;                /* destaque, ícones, links */
+    --cinza-medio: #ccc;                   /* divisores ou contornos */
+  }

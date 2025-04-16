@@ -1,6 +1,6 @@
 function aba_aberta() {
     const elemento = document.querySelector(".body");
-    elemento.style.gridTemplateColumns = "1fr 3fr 1.5fr";
+    elemento.style.gridTemplateColumns = "1fr 3fr 1fr";
 
     const texto = document.querySelectorAll(".contato");
 
@@ -14,7 +14,7 @@ function aba_aberta() {
 
 function aba_fechada() {
     const elemento = document.querySelector(".body");
-    elemento.style.gridTemplateColumns = "0.1fr 3.5fr 1.5fr";
+    elemento.style.gridTemplateColumns = "0.1fr 3.5fr 1fr";
 
     clearTimeout(timeoutID);
 

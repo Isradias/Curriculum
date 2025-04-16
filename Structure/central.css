@@ -1,3 +1,4 @@
 .central {
-    background-color: rgb(13, 124, 37);
+    /* background-color: rgb(13, 124, 37); */
+    background-color: var(--branco-quase);
 }

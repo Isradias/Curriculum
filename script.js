@@ -10,6 +10,12 @@ function aba_aberta() {
             setTimeout(() => el.style.opacity = "1", index * 100);
         });
     }, 250);  
+
+    const img = document.querySelectorAll(".img-lat-esq");
+
+    img.forEach((el) =>{
+        el.style.translate = "40%"
+    })
 }
 
 function aba_fechada() {
@@ -24,4 +30,10 @@ function aba_fechada() {
         el.style.opacity = "0",
         el.style.display = "none";
     });
+
+    const img = document.querySelectorAll(".img-lat-esq");
+
+    img.forEach((el) =>{
+        el.style.translate = "0%"
+    })
 }

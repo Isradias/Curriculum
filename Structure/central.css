@@ -1,4 +1,23 @@
 .central {
     /* background-color: rgb(13, 124, 37); */
     background-color: var(--branco-quase);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.loading {
+    width: 200px;
+    height: 200px;
+    border: 8px solid #ccc;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 100px auto;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }

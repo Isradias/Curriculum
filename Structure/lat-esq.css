@@ -14,12 +14,13 @@
 .img-lat-esq{
     width: 40px;
     height: fit-content;
+    transition: translate 0.3s ease;
 }
 
 .container_contato{
     display: flex;
     align-items: center;
-    gap: 0 8px;
+    gap: 0 8%;
     text-decoration: none;
     /* background-color: aqua; */
     font-size: 19px;
